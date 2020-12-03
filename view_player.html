@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="preloader"> <img class="preloader-icon" src="img/bde58b0d-782d-45cc-8fd8-2f2e07d2859c_200x200.png" alt="My Site Preloader"> </div>
+    <nav>
+        <div></div>
+        <div>
+            <a href="index.html"><div class="nav-item web">Search</div></a>
+            <a href="view_player.html"><div class="nav-item active web">View Player</div></a>
+            <a href="javascript:void(0)" class="menu" onclick="toggleNavBar()">
+                <div class="nav-item"><img src="img/baseline_menu_white_18dp.png" alt=""></div>
+            </a>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <span class="nav-item cancel" onclick="toggleNavBar()">&times;</span>
+            <a href="index.html"><div class="nav-item">Search</div></a>
+            <a href="#">
+                <div class="nav-item active">View Player</div>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="blur">
+            <div class="profile-container">
+                <div class="profile-img-container">
+                    <img width="200" src="img/Cristiano_Ronaldo.jpg" alt="" class="profile-img" id="image">
+                </div>
+                <div class="profile-details">
+                    <h3>Cristiano Ronaldo</h3>
+                    <h6>FW</h6>
+                    <p id="common_name"><span class="diff-color"></span> 35</p>
+                    <p id="first_name"><span class="diff-color"></span> 35</p>
+                    <p id="last_name"><span class="diff-color">Last name:</span> 35</p>
+                    <p id="age"><span class="diff-color">Age:</span> 35</p>
+                    <p id="position"><span class="diff-color">Position:</span> 35</p>
+                    <p id="shirt_number"><span class="diff-color">Shirt Number:</span> 35</p>
+                    <p id="foot"><span class="diff-color">Foot:</span> 35</p>
+                    <p id="height"><span class="diff-color">Height:</span> 1,87m</p>
+                    <p id="weight"><span class="diff-color">weight:</span> 1,87m</p>
+                    <p id="nationality"><span class="diff-color">Nationality:</span> Portugal</p>
+                    <p id="dob"><span class="diff-color">Date of Birth:</span> 5 February 1985</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

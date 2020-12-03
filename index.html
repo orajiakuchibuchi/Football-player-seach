@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Site Metas -->
+    <title>Search Players</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/bde58b0d-782d-45cc-8fd8-2f2e07d2859c_200x200.png" >
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader"> 
+        <img class="preloader-icon" src="img/bde58b0d-782d-45cc-8fd8-2f2e07d2859c_200x200.png" alt="Preloader image">
+    </div>
+    <!-- Nav -->
+    <nav>
+        <div>
+            <a href="index.html">
+                <div class="nav-item web">
+                    <img class="preloader-icon icon-img" src="img/bde58b0d-782d-45cc-8fd8-2f2e07d2859c_200x200.png" alt="Logo">
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <div class="nav-item active web">Search</div>
+            </a>
+            <a href="view_player.html">
+                <div class="nav-item web">View Player</div>
+            </a>
+            <a href="javascript:void(0)" class="menu" onclick="toggleNavBar()">
+                <div class="nav-item">
+                    <img src="img/baseline_menu_white_18dp.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <span class="nav-item cancel" onclick="toggleNavBar()">&times;</span>
+            <a href="#">
+                <div class="nav-item active">Search</div>
+            </a>
+            <a href="view_player.html">
+                <div class="nav-item">View Player</div>
+            </a>
+        </div>
+    </nav>
+    <!-- Container -->
+    <div class="container">
+        <div class="blur">
+            <div class="search-container" id="search">
+                <div class="label-container">
+                    <h3 for="search-field" class="search-label">
+                        Find your favorite <span class="diff-color">players profile</span>
+                    </h3>
+                </div>
+                <!-- Search Form -->
+                <form class="search-form">
+                    <div>
+                        <input class="search-field" id="search-field" type="text">
+                    </div>
+                    <p class="text-center" id="error"></p>
+                    <button class="search-button" type="button" id="fetchBtn">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <!-- Result List -->
+            <div class="list-item">
+                <div id="result">
+                    <div class="label-container">
+                        <h3 for="search-field" class="search-label">
+                            List of <span class="diff-color">players</span>
+                        </h3>
+                        <div class="table">
+                            <!-- List is added dynamically through javascript -->
+                            <table id="list"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
